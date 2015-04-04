@@ -11,3 +11,7 @@ rm /tmp/out2
 # EXERCICE 2
 ls -l /usr/bin > /tmp/out ; wc -l /tmp/out
 rm /tmp/out
+
+# EXERCICE 3
+find /usr/share/doc -name '*.gz' > /tmp/found ; wc -l /tmp/found
+rm /tmp/found
