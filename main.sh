@@ -48,4 +48,7 @@ ls -lR ~ > liste
 # EXERCICE 11
 find $1 -type l
 
-
+# EXERCICE 13
+ls -lS /usr/bin > /tmp/out ; split -l 10 /tmp/out
+mv xaa final ; rm x*
+rm /tmp/out
