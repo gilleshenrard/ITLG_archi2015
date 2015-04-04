@@ -43,4 +43,9 @@ rm /tmp/out
 ls -R > files
 
 # EXERCICE 10
-ls -lR ~ > liste 
+ls -lR ~ > liste
+
+# EXERCICE 11
+find $1 -type l
+
+
