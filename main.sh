@@ -41,3 +41,6 @@ rm /tmp/out
 
 # EXERCICE 9
 ls -R > files
+
+# EXERCICE 10
+ls -lR ~ > liste 
