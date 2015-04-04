@@ -18,3 +18,8 @@ rm /tmp/found
 
 # EXERCICE 4
 ps -eo euser,comm | grep $1
+
+# EXERCICE 5
+#le fichier /etc/passwd est lu, ligne par ligne, et le retour "\n" est remplacé par "\r", et la nouvelle ligne est copiée dans /tmp/newpasswd
+#	etant donné que "\r" ne fait pas passer le curseur à la ligne suivante, contrairement à "\n", le fichier final consiste en une seule ligne,
+#	où l'on voit la dernière ligne et les traces des anciennes lignes, plus longues
