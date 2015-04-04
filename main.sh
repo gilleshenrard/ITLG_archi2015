@@ -15,3 +15,6 @@ rm /tmp/out
 # EXERCICE 3
 find /usr/share/doc -name '*.gz' > /tmp/found ; wc -l /tmp/found
 rm /tmp/found
+
+# EXERCICE 4
+ps -eo euser,comm | grep $1
