@@ -34,3 +34,9 @@ cut -d '/' -f 2 test > /tmp/test ; sort -r -o test /tmp/test
 # EXERCICE 7
 find /etc -type f > /tmp/out ; wc -l /tmp/out
 rm /tmp/out
+
+# EXERCICE 8
+find /etc -type d > /tmp/out ; wc -l /tmp/out
+rm /tmp/out
+
+# EXERCICE 9
