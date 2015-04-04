@@ -30,3 +30,7 @@ sort -g ex6Data
 #parties 2 et 3 (les manips se font dans un fichier "test", penser à le virer)
 cp ex6Data test
 cut -d '/' -f 2 test > /tmp/test ; sort -r -o test /tmp/test
+
+# EXERCICE 7
+find /etc -type f > /tmp/out ; wc -l /tmp/out
+rm /tmp/out
