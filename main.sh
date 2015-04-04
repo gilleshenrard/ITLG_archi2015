@@ -40,3 +40,4 @@ find /etc -type d > /tmp/out ; wc -l /tmp/out
 rm /tmp/out
 
 # EXERCICE 9
+ls -R > files
