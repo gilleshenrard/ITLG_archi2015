@@ -5,7 +5,7 @@
 #
 
 # EXERCICE 1
-cut -d ':' -f 1 /etc/passwd | sort -o /tmp/out
+cut -d: -f1 /etc/passwd | sort -o /tmp/out
 
 # EXERCICE 2
 ls -l /usr/bin | wc -l
@@ -26,7 +26,7 @@ ps -eo euser,comm | grep $1
 sort -g ex6Data
 #parties 2 et 3 (les manips se font dans un fichier "test", penser à le virer)
 cp ex6Data test
-cut -d '/' -f 2 test | sort -r -o test
+cut -d/ -f2 test | sort -r -o test
 
 # EXERCICE 7
 find /etc -type f -maxdepth 1 2> /dev/null | wc -l
