@@ -45,3 +45,6 @@ find $1 -type l
 
 # EXERCICE 13
 ls -lhS /usr/bin | head
+
+# EXERCICE 14
+cat zola_curee.txt | grep '^[aA]' | wc -l
