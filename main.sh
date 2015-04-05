@@ -42,6 +42,11 @@ ls -lR ~ > liste
 # EXERCICE 11
 find $1 -type l
 
+# EXERCICE 12
+cp /usr/share/man/man1/ls.1.gz /tmp; gunzip /tmp/ls.1.gz
+grep -i "file" /tmp/ls.1 | wc -l
+rm /tmp/ls.1
+
 # EXERCICE 13
 ls -lhS /usr/bin | head
 
