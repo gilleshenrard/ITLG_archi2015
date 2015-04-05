@@ -54,3 +54,9 @@ cat zola_curee.txt | grep '[1-9]' | wc -l
 
 # EXERCICE 16
 cat zola_curee.txt | grep '[^.;:/?!]$' | wc -l
+
+# EXERCICE 17
+cat zola_curee.txt | grep '^.r' | wc -l
+
+EXERCICE 18
+cat zola_curee.txt | grep '[A-Z|a-z]r' | wc -l
