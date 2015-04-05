@@ -5,16 +5,13 @@
 #
 
 # EXERCICE 1
-cut -d ':' -f 1 /etc/passwd > /tmp/out2 ; sort -o /tmp/out /tmp/out2
-rm /tmp/out2
+cut -d ':' -f 1 /etc/passwd | sort -o /tmp/out
 
 # EXERCICE 2
-ls -l /usr/bin > /tmp/out ; wc -l /tmp/out
-rm /tmp/out
+ls -l /usr/bin | wc -l
 
 # EXERCICE 3
-find /usr/share/doc -name '*.gz' > /tmp/found ; wc -l /tmp/found
-rm /tmp/found
+find /usr/share/doc -name '*.gz' | wc -l
 
 # EXERCICE 4
 ps -eo euser,comm | grep $1
@@ -29,15 +26,13 @@ ps -eo euser,comm | grep $1
 sort -g ex6Data
 #parties 2 et 3 (les manips se font dans un fichier "test", penser à le virer)
 cp ex6Data test
-cut -d '/' -f 2 test > /tmp/test ; sort -r -o test /tmp/test
+cut -d '/' -f 2 test | sort -r -o test
 
 # EXERCICE 7
-find /etc -type f > /tmp/out ; wc -l /tmp/out 2> /dev/null
-rm /tmp/out
+find /etc -type f -maxdepth 1 2> /dev/null | wc -l
 
 # EXERCICE 8
-find /etc -type d > /tmp/out ; wc -l /tmp/out 2> /dev/null
-rm /tmp/out
+find /etc -type d -maxdepth 1 2> /dev/null | wc -l
 
 # EXERCICE 9
 ls -R > files
@@ -49,5 +44,4 @@ ls -lR ~ > liste
 find $1 -type l
 
 # EXERCICE 13
-ls -lhS /usr/bin > /tmp/out ; cat /tmp/out | head
-rm /tmp/out
+ls -lhS /usr/bin | head
