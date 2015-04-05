@@ -48,3 +48,9 @@ ls -lhS /usr/bin | head
 
 # EXERCICE 14
 cat zola_curee.txt | grep '^[aA]' | wc -l
+
+# EXERCICE 15
+cat zola_curee.txt | grep '[1-9]' | wc -l
+
+# EXERCICE 16
+cat zola_curee.txt | grep '[^.;:/?!]$' | wc -l
