@@ -6,7 +6,12 @@
 
 entry=''						#Initialisation de la variable
 until [ "$entry" == "Q" ]
-	do read entry					#Lecture de la commande
+	do
+	echo ""
+	echo "********************************************************************"
+	echo "Saisissez une commande (<Q> pour quitter)"
+	echo "********************************************************************"
+	read entry					#Lecture de la commande
 
 	if [ "$entry" != "Q" ]; then			#Test si non 'Q'
 		$entry					#Exécution de la commande
