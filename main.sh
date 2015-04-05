@@ -23,10 +23,9 @@ ps -eo euser,comm | grep $1
 
 # EXERCICE 6
 #partie 1
-sort -g ex6Data
-#parties 2 et 3 (les manips se font dans un fichier "test", penser à le virer)
-cp ex6Data test
-cut -d/ -f2 test | sort -r -o test
+sort -g listfile
+#parties 2 et 3
+cut -d/ -f2 listfile | sort -r -o listfile
 
 # EXERCICE 7
 find /etc -type f -maxdepth 1 2> /dev/null | wc -l
