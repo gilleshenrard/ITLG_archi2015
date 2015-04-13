@@ -51,16 +51,16 @@ rm /tmp/ls.1
 ls -lhS /usr/bin | head
 
 # EXERCICE 14
-cat zola_curee.txt | grep '^[aA]' | wc -l
+grep '^[aA]' zola_curee.txt | wc -l
 
 # EXERCICE 15
-cat zola_curee.txt | grep '[1-9]' | wc -l
+grep '[1-9]' zola_curee.txt | wc -l
 
 # EXERCICE 16
-cat zola_curee.txt | grep '[^.,;:/?!]$' | wc -l
+grep '[^.,;:/?!]$' zola_curee.txt | wc -l
 
 # EXERCICE 17
-cat zola_curee.txt | grep '^.r' | wc -l
+grep '^.r' zola_curee.txt | wc -w
 
 # EXERCICE 18
-cat zola_curee.txt | grep '[A-Z|a-z]r' | wc -l
+grep '[A-Z|a-z]r' zola_curee.txt | wc -w
