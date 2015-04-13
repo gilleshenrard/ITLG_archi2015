@@ -25,7 +25,7 @@ ps -eo euser,comm | grep $1
 #partie 1
 sort -g listfile
 #parties 2 et 3
-cut -d/ -f2 listfile | sort -r -o listfile
+cut -d/ -f2 listfile | sort -r
 
 # EXERCICE 7
 find /etc -maxdepth 1 -type f 2> /dev/null | wc -l
