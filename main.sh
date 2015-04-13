@@ -28,10 +28,10 @@ sort -g listfile
 cut -d/ -f2 listfile | sort -r -o listfile
 
 # EXERCICE 7
-find /etc -type f -maxdepth 1 2> /dev/null | wc -l
+find /etc -maxdepth 1 -type f 2> /dev/null | wc -l
 
 # EXERCICE 8
-find /etc -type d -maxdepth 1 2> /dev/null | wc -l
+find /etc -maxdepth 1 -type d 2> /dev/null | wc -l
 
 # EXERCICE 9
 ls -R > files
@@ -40,7 +40,7 @@ ls -R > files
 ls -lR ~ > liste
 
 # EXERCICE 11
-find $1 -type l
+find ./* -type l
 
 # EXERCICE 12
 cp /usr/share/man/man1/ls.1.gz /tmp; gunzip /tmp/ls.1.gz
