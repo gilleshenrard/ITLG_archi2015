@@ -10,8 +10,8 @@ until [ $i -gt $2 ]; do
 	echo "x=$i, y=$i"
 	let i=i+1
 done
-echo "***********"
-echo
+echo -e "***********\n\n"
+
 i=$1
 echo "*** y=x² ***"
 until [ $i -gt $2 ]; do

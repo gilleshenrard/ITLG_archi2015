@@ -8,8 +8,8 @@ echo "*** y=x ***"
 for i in `seq -10 10`
 	do echo "x=$i, y=$i"
 done
-echo "***********"
-echo
+echo -e "***********\n\n"
+
 echo "*** y=x² ***"
 for i in `seq -10 10`
 	do let j=$i*$i
