@@ -13,4 +13,4 @@ cat etc* > ~/etc.tar
 rm etc*
 
 #EXERCICE 2
-ls -l /etc | grep -e ^[a-m]
+find /etc -regex '^[a-m]' | tar -cvf etc1.tar -T -
