@@ -14,7 +14,7 @@ ls -l /usr/bin | wc -l
 find /usr/share/doc -name '*.gz' | wc -l
 
 # EXERCICE 4
-ps -eo euser,comm | grep $1
+ps -eo euser,comm | grep bash
 
 # EXERCICE 5
 #le fichier /etc/passwd est lu, ligne par ligne, et le retour "\n" est remplacé par "\r", et la nouvelle ligne est copiée dans /tmp/newpasswd
