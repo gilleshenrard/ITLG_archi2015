@@ -12,8 +12,11 @@ split -b 100K ~/etc.tar etc
 cat etc* > ~/etc.tar
 rm etc*
 
-#EXERCICE 2
-sudo find /etc -maxdepth 1 -name '[a-m]*' | tar -cvf test.tar -T -
+# EXERCICE 2
+find /etc -maxdepth 1 -name "[a-m]*" | tar -cvf etc1.tar -T -
+find /etc -maxdepth 1 -name "[n-z]*" | tar -cvf etc2.tar -T -
 # Merci à Loïc Sarlet pour sa soluce ;)
 
-
+# EXERCICE 3
+find /etc -maxdepth 1 -name "*.d" | tar -cvf etc.d.tar -T -
+find /etc -maxdepth 1 -not -name "*.d" | tar -cvf other.tar -T -
