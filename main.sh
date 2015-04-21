@@ -13,4 +13,7 @@ cat etc* > ~/etc.tar
 rm etc*
 
 #EXERCICE 2
-sudo find /etc -regex '/etc/[a-m]*' | tar -cvf test.tar -T -
+sudo find /etc -maxdepth 1 -name '[a-m]*' | tar -cvf test.tar -T -
+# Merci à Loïc Sarlet pour sa soluce ;)
+
+
