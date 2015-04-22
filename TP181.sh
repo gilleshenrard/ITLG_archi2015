@@ -1,6 +1,10 @@
 #! /bin/bash
 
-echo "$1"
+function affTABLE {
+	for i in `seq 1 10`; do
+		let res=$i*$1
+		echo "$res"
+	done
+}
 
-#function affTABLE{
-#}
+affTABLE $1
