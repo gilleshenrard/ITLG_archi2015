@@ -13,7 +13,8 @@ function calc {
 }
 
 op="0"
-until [ $op != "=" ]; do
+until [ $op == "=" ]; do
 	read next
-	
+	let op=`cut -d' ' $next`
+	echo "$op"
 done
