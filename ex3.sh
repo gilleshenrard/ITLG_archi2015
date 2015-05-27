@@ -7,4 +7,4 @@ date --rfc-3339="date"
 date --rfc-3339="date" --date="1 year ago"
 
 #question 3
-last -10 $1
+last -R gilles | tr -s ' ' | cut -d' ' -f 4,5 | head -n -2 | uniq
